@@ -13,8 +13,8 @@ struct MainViewModel {
         1
     }
 
-    func numberOfRows(in section: Int) {
-        
+    func numberOfRows(in section: Int) -> Int {
+        10
     }
     
 }
