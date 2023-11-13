@@ -19,7 +19,7 @@ extension MainViewController: UITableViewDataSource {
     }
     
     func registerCells() {
-        tableView.register(UITableView.self, forCellReuseIdentifier: "cell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
