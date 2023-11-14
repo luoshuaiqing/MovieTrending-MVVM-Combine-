@@ -5,9 +5,11 @@
 //  Created by Shuaiqing Luo on 11/13/23.
 //
 
+/// NOTE: this class is copied from https://app.quicktype.io/
+
 import Foundation
 
-// MARK: - Welcome
+// MARK: - TrendingMoviesModel
 struct TrendingMoviesModel: Codable {
     let page: Int
     let results: [Movie]
@@ -69,5 +71,6 @@ enum MediaType: String, Codable {
 enum OriginalLanguage: String, Codable {
     case en = "en"
     case hi = "hi"
+    case it = "it"
     case ja = "ja"
 }
