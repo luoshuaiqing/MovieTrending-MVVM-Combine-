@@ -19,6 +19,9 @@ class MainViewController: UIViewController {
     
     var viewModel: MainViewModel = MainViewModel()
     
+    // MARK: - Variables
+    var cellDataSource: [Movie] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,6 +50,12 @@ class MainViewController: UIViewController {
                     self.activityIndicator.stopAnimating()
                 }
             }
+        }
+        
+        viewModel.cellDataSource.bind { [weak self] movies in
+            guard let self = self else { return }
+            self.cellDataSource = movies
+            self.reloadTableView()
         }
     }
     

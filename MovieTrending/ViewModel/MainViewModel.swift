@@ -10,6 +10,7 @@ import Foundation
 class MainViewModel {
     
     var isLoading: Observable<Bool> = Observable(false)
+    var cellDataSource: Observable<[Movie]> = Observable([])
     var dataSource: TrendingMoviesModel?
     
     func numberOfSections() -> Int {
@@ -17,7 +18,7 @@ class MainViewModel {
     }
 
     func numberOfRows(in section: Int) -> Int {
-        5
+        dataSource?.results.count ?? 0
     }
     
     func getData() {
@@ -37,4 +38,8 @@ class MainViewModel {
         }
     }
     
+    
+    func mapCellData() {
+        cellDataSource.value = dataSource?.results ?? []
+    }
 }

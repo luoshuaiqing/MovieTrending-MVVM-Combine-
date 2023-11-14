@@ -5,6 +5,7 @@
 //  Created by Shuaiqing Luo on 11/13/23.
 //
 
+import Foundation
 import UIKit
 
 extension MainViewController: UITableViewDataSource {
@@ -40,4 +41,13 @@ extension MainViewController: UITableViewDataSource {
 
 extension MainViewController: UITableViewDelegate {
     
+}
+
+extension MainViewController {
+    
+    func reloadTableView() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
 }
