@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class DetailsMovieViewController: UIViewController {
 
@@ -29,7 +30,14 @@ class DetailsMovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configureView()
     }
 
+    private func configureView() {
+        title = "Movie Details"
+        titleLabel.text =  viewModel.movieTitle
+        descriptionLabel.text = viewModel.movieDescription
+        imageView.sd_setImage(with: viewModel.movieImage)
+    }
+    
 }
