@@ -20,6 +20,8 @@
 		5853FEA82B03C4A8005B4FB5 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853FEA72B03C4A8005B4FB5 /* Observable.swift */; };
 		5853FEAC2B03D857005B4FB5 /* MainMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853FEAA2B03D857005B4FB5 /* MainMovieCell.swift */; };
 		5853FEAD2B03D857005B4FB5 /* MainMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5853FEAB2B03D857005B4FB5 /* MainMovieCell.xib */; };
+		5853FEAF2B03E177005B4FB5 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853FEAE2B03E177005B4FB5 /* UIView+Extensions.swift */; };
+		5853FEB12B03E2EA005B4FB5 /* MovieTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853FEB02B03E2EA005B4FB5 /* MovieTableCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		5853FEA72B03C4A8005B4FB5 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		5853FEAA2B03D857005B4FB5 /* MainMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMovieCell.swift; sourceTree = "<group>"; };
 		5853FEAB2B03D857005B4FB5 /* MainMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMovieCell.xib; sourceTree = "<group>"; };
+		5853FEAE2B03E177005B4FB5 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		5853FEB02B03E2EA005B4FB5 /* MovieTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				5853FE9F2B027AEB005B4FB5 /* MainViewModel.swift */,
+				5853FEB02B03E2EA005B4FB5 /* MovieTableCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 		5853FE7A2B01283F005B4FB5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5853FEAE2B03E177005B4FB5 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -242,10 +248,12 @@
 			files = (
 				5853FEA82B03C4A8005B4FB5 /* Observable.swift in Sources */,
 				5853FEAC2B03D857005B4FB5 /* MainMovieCell.swift in Sources */,
+				5853FEAF2B03E177005B4FB5 /* UIView+Extensions.swift in Sources */,
 				5853FE732B006F54005B4FB5 /* MainViewController.swift in Sources */,
 				5853FEA42B02815E005B4FB5 /* APICaller.swift in Sources */,
 				5853FE9E2B027A0C005B4FB5 /* MainViewController+TableView.swift in Sources */,
 				5853FEA22B027F2F005B4FB5 /* NetworkConstant.swift in Sources */,
+				5853FEB12B03E2EA005B4FB5 /* MovieTableCellViewModel.swift in Sources */,
 				5853FE592B006D30005B4FB5 /* AppDelegate.swift in Sources */,
 				5853FEA02B027AEB005B4FB5 /* MainViewModel.swift in Sources */,
 				5853FEA62B02818E005B4FB5 /* TrendingMoviesModel.swift in Sources */,
