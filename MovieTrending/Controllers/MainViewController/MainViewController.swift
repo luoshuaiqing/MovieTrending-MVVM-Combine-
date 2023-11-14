@@ -18,9 +18,7 @@ class MainViewController: UIViewController {
     // MARK: - ViewModel
     
     var viewModel: MainViewModel = MainViewModel()
-    
-    // MARK: - Variables
-    var cellDataSource: [Movie] = []
+    var movieTableCellViewModels: [MovieTableCellViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,9 +50,9 @@ class MainViewController: UIViewController {
             }
         }
         
-        viewModel.cellDataSource.bind { [weak self] movies in
+        viewModel.movieTableCellViewModels.bind { [weak self] movieTableCellViewModels in
             guard let self = self else { return }
-            self.cellDataSource = movies
+            self.movieTableCellViewModels = movieTableCellViewModels
             self.reloadTableView()
         }
     }

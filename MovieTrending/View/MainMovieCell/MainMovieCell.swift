@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MainMovieCell: UITableViewCell {
     
@@ -28,6 +29,7 @@ class MainMovieCell: UITableViewCell {
         nameLabel.text = viewModel.title
         dateLabel.text = viewModel.date
         rateLabel.text = viewModel.rating
+        movieImageView.sd_setImage(with: viewModel.imageUrl)
     }
     
 }
