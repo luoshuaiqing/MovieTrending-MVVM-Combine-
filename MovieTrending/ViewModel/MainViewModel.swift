@@ -43,7 +43,15 @@ class MainViewModel {
         movie.title
     }
     
-    private func mapCellData() {
+    func retrieveMovie(with id: Int) -> Movie? {
+        guard let movie = dataSource?.results.first(where: { $0.id == id }) else { return nil }
+        return movie
+    }
+    
+}
+
+private extension MainViewModel {
+    func mapCellData() {
         movieTableCellViewModels.value = dataSource?.results.compactMap({ movie in
             MovieTableCellViewModel(movie: movie)
         }) ?? []

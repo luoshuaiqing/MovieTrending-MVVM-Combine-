@@ -33,6 +33,8 @@ class MainMovieCell: UITableViewCell {
         backView.round(10)
         
         movieImageView.round(5)
+        
+        selectionStyle = .none
     }
     
     func setupCell(viewModel: MovieTableCellViewModel) {
