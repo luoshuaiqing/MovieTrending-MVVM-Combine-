@@ -10,6 +10,17 @@ import SDWebImage
 
 class MainMovieCell: UITableViewCell {
     
+    /// Note: This should be added to the identifier of the nib file as well.
+    static var identifier: String {
+        get {
+            "MainMovieCellIdentifier"
+        }
+    }
+    
+    static func register() -> UINib {
+        UINib(nibName: "MainMovieCell", bundle: nil)
+    }
+    
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

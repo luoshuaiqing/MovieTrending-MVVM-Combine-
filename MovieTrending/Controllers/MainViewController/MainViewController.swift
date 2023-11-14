@@ -12,7 +12,6 @@ class MainViewController: UIViewController {
     // MARK: - IBOutlets
 
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     // MARK: - ViewModel
