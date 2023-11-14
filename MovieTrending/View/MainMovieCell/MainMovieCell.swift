@@ -10,7 +10,6 @@ import SDWebImage
 
 class MainMovieCell: UITableViewCell {
     
-    /// Note: This should be added to the identifier of the nib file as well.
     static var identifier: String {
         get {
             "MainMovieCellIdentifier"
