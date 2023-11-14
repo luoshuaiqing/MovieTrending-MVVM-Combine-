@@ -25,7 +25,9 @@ class MainMovieCell: UITableViewCell {
     }
     
     func setupCell(viewModel: MovieTableCellViewModel) {
-        
+        nameLabel.text = viewModel.title
+        dateLabel.text = viewModel.date
+        rateLabel.text = viewModel.rating
     }
     
 }
