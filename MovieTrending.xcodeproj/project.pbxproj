@@ -18,6 +18,8 @@
 		5853FEA42B02815E005B4FB5 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853FEA32B02815E005B4FB5 /* APICaller.swift */; };
 		5853FEA62B02818E005B4FB5 /* TrendingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853FEA52B02818E005B4FB5 /* TrendingMoviesModel.swift */; };
 		5853FEA82B03C4A8005B4FB5 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853FEA72B03C4A8005B4FB5 /* Observable.swift */; };
+		5853FEAC2B03D857005B4FB5 /* MainMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853FEAA2B03D857005B4FB5 /* MainMovieCell.swift */; };
+		5853FEAD2B03D857005B4FB5 /* MainMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5853FEAB2B03D857005B4FB5 /* MainMovieCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		5853FEA32B02815E005B4FB5 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		5853FEA52B02818E005B4FB5 /* TrendingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesModel.swift; sourceTree = "<group>"; };
 		5853FEA72B03C4A8005B4FB5 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		5853FEAA2B03D857005B4FB5 /* MainMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMovieCell.swift; sourceTree = "<group>"; };
+		5853FEAB2B03D857005B4FB5 /* MainMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMovieCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		5853FE782B012834005B4FB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5853FEA92B03D833005B4FB5 /* MainMovieCell */,
 				5853FE632B006D33005B4FB5 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -152,6 +157,15 @@
 				5853FE6C2B006EF8005B4FB5 /* MainViewController */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5853FEA92B03D833005B4FB5 /* MainMovieCell */ = {
+			isa = PBXGroup;
+			children = (
+				5853FEAA2B03D857005B4FB5 /* MainMovieCell.swift */,
+				5853FEAB2B03D857005B4FB5 /* MainMovieCell.xib */,
+			);
+			path = MainMovieCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +229,7 @@
 				5853FE652B006D33005B4FB5 /* LaunchScreen.storyboard in Resources */,
 				5853FE622B006D33005B4FB5 /* Assets.xcassets in Resources */,
 				5853FE742B006F54005B4FB5 /* MainViewController.xib in Resources */,
+				5853FEAD2B03D857005B4FB5 /* MainMovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5853FEA82B03C4A8005B4FB5 /* Observable.swift in Sources */,
+				5853FEAC2B03D857005B4FB5 /* MainMovieCell.swift in Sources */,
 				5853FE732B006F54005B4FB5 /* MainViewController.swift in Sources */,
 				5853FEA42B02815E005B4FB5 /* APICaller.swift in Sources */,
 				5853FE9E2B027A0C005B4FB5 /* MainViewController+TableView.swift in Sources */,
