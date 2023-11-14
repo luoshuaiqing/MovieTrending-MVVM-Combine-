@@ -15,15 +15,9 @@ class NetworkConstant {
         
     }
     
-    public var apiKey: String {
+    public var urlString: String {
         get {
-            return "75f5437055b142e6a5ccd1331ffedefc"
-        }
-    }
-    
-    public var serverAddress: String {
-        get {
-            return "https://api.themoviedb.org/3/"
+            return "https://api.themoviedb.org/3/search/movie?query=batman&language=en-US&page=1&year=2022"
         }
     }
     

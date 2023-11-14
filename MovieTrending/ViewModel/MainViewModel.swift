@@ -32,6 +32,7 @@ class MainViewModel {
             case .success(let data):
                 print("Top Trending Counts: \(data.results.count)")
                 self.dataSource = data
+                self.mapCellData()
             case .failure(let error):
                 print(error)
             }
@@ -39,7 +40,7 @@ class MainViewModel {
     }
     
     
-    func mapCellData() {
+    private func mapCellData() {
         cellDataSource.value = dataSource?.results ?? []
     }
 }
