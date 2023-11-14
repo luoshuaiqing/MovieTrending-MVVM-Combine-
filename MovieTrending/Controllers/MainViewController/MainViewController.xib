@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MovieTrending" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="ZDy-A6-V6p" id="d8k-WB-4vI"/>
                 <outlet property="tableView" destination="jEC-ND-gxn" id="DR5-0A-wmC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,13 +24,18 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="ZDy-A6-V6p">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="jEC-ND-gxn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7qT-Fz-0ea"/>
                 <constraint firstItem="jEC-ND-gxn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L4a-nu-gRU"/>
+                <constraint firstItem="ZDy-A6-V6p" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XOM-8C-58G"/>
                 <constraint firstAttribute="bottom" secondItem="jEC-ND-gxn" secondAttribute="bottom" id="cbJ-L0-DG9"/>
+                <constraint firstItem="ZDy-A6-V6p" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eoE-Zf-VgE"/>
                 <constraint firstItem="jEC-ND-gxn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uqb-TX-EJY"/>
             </constraints>
             <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
